@@ -330,3 +330,39 @@ footer {
 .box2 a {
   color: #6ccff6;
 }
+
+/* ============== */
+/*   RESPONSIVE   */
+/* ============== */
+@media screen and (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .servicios ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios ul li {
+    font-size: 20px;
+  }
+  .porqueElegirnos>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about div h2,
+  .servicios h2,
+  .porqueElegirnos h2,
+  .staff h2 {
+    font-size: 20px;
+  }
+  .about div p,
+  .servicios p {
+    font-size: 15px;
+  }
+}
