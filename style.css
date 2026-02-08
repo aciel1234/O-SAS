@@ -353,6 +353,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  aside {
+    line-height: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .about div h2,
@@ -364,5 +367,14 @@ footer {
   .about div p,
   .servicios p {
     font-size: 15px;
+  }
+  header nav ul li a:nth-child(2) {
+    display: none;
+  }
+  header nav ul li a:nth-child(1) {
+    font-size: 20px;
+  }
+  .servicios ul {
+    padding: 2rem 0;
   }
 }
