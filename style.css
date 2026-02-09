@@ -37,44 +37,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #aed1f8;
 }
-.logo, .logo h2 {
-  position: relative;
-  display: flex;
-  background: #35577D;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 2px 5px;
-}
-@property --deg{
-  syntax: '<angle>';
-  inherits: true;
-  initial-value: 0deg;
-}
-.logo h2::before,
-.logo h2::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: conic-gradient(from var(--deg) at center,
-  #00c3ff,
-  transparent,
-  transparent,
-  transparent);
-  border-radius: inherit;
-  z-index: -2;
-  padding: 4px 8px;
-  animation: autoRotate 2s linear infinite;
-}
-.logo h2::after {
-  filter: blur(10px);
-}
-@keyframes autoRotate {
-  to {
-    --deg: 360deg;
-  }
-}
+
 /* ============== */
 /*      HERO      */
 /* ============== */
